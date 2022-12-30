@@ -41,8 +41,8 @@ $builderClientManual[] = $builderManual
 echo "Test with BuilderClientManual: \n ";
 print_r($builderClientManual);
 
-$manager = new ContactManager();
-$manager->setBuilder($builderManual);
+$managerManual = new ContactManager();
+$managerManual->setBuilder($builderManual);
 
 $builderEmployeeContactManual[] = $manager->createNewContactEmployeeManual();
 echo "Test Employee Contact Manual: \n ";
