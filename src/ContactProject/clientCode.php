@@ -1,6 +1,6 @@
 <?php
 
-namespace projects\src\ClientProject;
+namespace projects\src\ContactProject;
 
 require_once '../../vendor/autoload.php';
 
@@ -16,7 +16,7 @@ $builderClientContact[] = $builder
     ->Address('some address')
     ->Build();
 
-echo "Test with BuilderClient: \n ";
+echo "Test Client Contact: \n ";
 print_r($builderClientContact);
 
 

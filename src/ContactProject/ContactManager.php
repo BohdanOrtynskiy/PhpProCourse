@@ -1,6 +1,6 @@
 <?php
 
-namespace projects\src\ClientProject;
+namespace projects\src\ContactProject;
 
 class ContactManager
 {

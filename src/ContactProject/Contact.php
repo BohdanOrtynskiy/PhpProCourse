@@ -1,8 +1,8 @@
 <?php
 
-namespace projects\src\ClientProject;
+namespace projects\src\ContactProject;
 
-class ContactManual
+class Contact
 {
     public $name;
     public $surname;
@@ -11,7 +11,6 @@ class ContactManual
     public $email;
     public $phone;
     public $address;
-
 
 
 }

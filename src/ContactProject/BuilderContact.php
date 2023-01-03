@@ -1,10 +1,11 @@
 <?php
 
-namespace projects\src\ClientProject;
+namespace projects\src\ContactProject;
 
-class BuilderContactManual implements BuilderContactInterface
-{
-    protected $contactManual;
+
+class BuilderContact implements BuilderContactInterface{
+
+    protected $contact;
 
     public function __construct(){
         $this->create();
@@ -12,7 +13,7 @@ class BuilderContactManual implements BuilderContactInterface
 
     public function create(): BuilderContactInterface
     {
-        $this->contactManual = new ContactManual();
+        $this->contact = new Contact();
 
         return $this;
     }
@@ -21,20 +22,20 @@ class BuilderContactManual implements BuilderContactInterface
     public function Name(string $name): BuilderContactInterface
     {
 
-        $this->contactManual->name = $name;
+       $this->contact->name = $name;
 
-        return $this;
+       return $this;
     }
     public function Surname(string $surname): BuilderContactInterface
     {
-        $this->contactManual->surname = $surname;
+        $this->contact->surname = $surname;
 
         return $this;
     }
     public function Email(string $email): BuilderContactInterface
     {
 
-        $this->contactManual->email = $email;
+        $this->contact->email = $email;
 
         return $this;
     }
@@ -43,36 +44,34 @@ class BuilderContactManual implements BuilderContactInterface
     {
 
 
-        $this->contactManual->address = $address;
+        $this->contact->address = $address;
 
         return $this;
     }
     public function Phone(string $phone): BuilderContactInterface
     {
 
-        $this->contactManual->phone = $phone;
+        $this->contact->phone = $phone;
 
         return $this;
     }
     public function Whois(string $whois): BuilderContactInterface
     {
 
-        $this->contactManual->whois = $whois;
+        $this->contact->whois = $whois;
 
         return $this;
     }
     public function Position(string $position): BuilderContactInterface
     {
 
-        $this->contactManual->position = $position;
+        $this->contact->position = $position;
 
         return $this;
     }
+    public function Build(): Contact{
 
-
-    public function Build(): ContactManual{
-
-        $result = $this->contactManual;
+        $result = $this->contact;
         $this->create();
 
         return $result;
