@@ -1,7 +1,13 @@
 {
   "autoload": {
     "psr-4": {
-      "projects\\" : "./"
+      "projects\\" : "./",
+      "Models\\": "App/Models",
+      "Config\\": "Config"
     }
+  },
+  "require": {
+    "vlucas/phpdotenv": "^5.5",
+    "ext-pdo": "*"
   }
 }
