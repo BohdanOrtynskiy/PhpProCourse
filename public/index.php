@@ -10,12 +10,7 @@ $dotenv->load();
 
 try {
 
-//    $pdo = new PDO(
-//        'mysql:host=db;dbname=taxi',
-//        Config::get('db.user'),
-//        Config::get('db.password')
-//    );
-    var_dump(Config::get('db.user'),Config::get('db.password'), Config::get('db.code'));
+dd(\Core\Db::connect());
 } catch (PDOException $exception) {
-    var_dump('Exception', $exception->getMessage());
+    dd('Exception', $exception->getMessage());
 }

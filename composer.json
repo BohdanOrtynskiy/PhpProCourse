@@ -1,12 +1,13 @@
 {
   "autoload": {
     "psr-4": {
-      "projects\\" : "./",
-      "Models\\": "App/Models",
-      "Config\\": "Config"
+      "Config\\": "Config/",
+      "Core\\": "Core/",
+      "App\\": "App/"
     }
   },
   "require": {
+    "larapack/dd": "^1.1",
     "vlucas/phpdotenv": "^5.5",
     "ext-pdo": "*"
   }
