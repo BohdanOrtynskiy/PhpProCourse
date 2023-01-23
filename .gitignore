@@ -2,4 +2,10 @@
 /.idea
 .env
 /docker/mysql/
-
+/App
+/Config
+composer.lock
+docker-compose.yml
+.gitignore
+.env.example
+/routes

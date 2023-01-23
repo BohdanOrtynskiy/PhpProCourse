@@ -10,7 +10,6 @@ class Config
     {
         if (is_null(self::$instance)) {
             self::$instance = new self;
-            var_dump('init instance');
         }
 
         return self::$instance->getParam($name);
